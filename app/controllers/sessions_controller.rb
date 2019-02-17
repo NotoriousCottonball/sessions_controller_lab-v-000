@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
 
-   def new
+  def new
   end
 
-   def create
+  def create
     if !params[:name] || params[:name].empty?
       redirect_to '/login'
     else
@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
     end
   end
 
-   def destroy
+  def destroy
     session.delete :name
     redirect_to 'hello'
   end
