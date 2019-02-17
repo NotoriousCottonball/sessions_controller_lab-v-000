@@ -7,7 +7,7 @@ class ApplicationController < ActionController::Base
 
    def hello
     if logged_in?
-      render '/application/hello'
+      render :hello
     else
       redirect_to login_path
     end
