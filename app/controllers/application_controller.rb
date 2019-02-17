@@ -23,4 +23,3 @@ class ApplicationController < ActionController::Base
     redirect to '/'
   end
 end
-end
